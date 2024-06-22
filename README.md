@@ -10,30 +10,3 @@ BMS（电池管理系统）是用于智能化管理及维护电池单元，防�
 1. 接口层（Controller）：提供HTTP接口用于接收车辆信号并返回预警信息。
 2. 服务层（Service）：使用Spring Boot框架实现业务逻辑，包含信号处理、规则匹配和预警生成等功能。
 3. 数据访问层（model）：包含实体类，表示数据库中的表。
-4. 项目总体结构
-BatteryWarningSystem/
-│
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/example/batterywarningsystem/
-│   │   │       ├── controller/
-│   │   │       │   └── WarningController.java
-│   │   │       ├── model/
-│   │   │       │   └── Warning.java
-│   │   │       ├── service/
-│   │   │       │   ├── WarningService.java
-│   │   │       │   └── RedisConfig.java
-│   │   │       └── BatteryWarningSystemApplication.java
-│   │   ├── resources/
-│   │   │   └── application.properties
-│   │   
-│   ├── test/
-│   │   └── java/
-│   │       └── com/example/batterywarningsystem/
-│   │           ├── controller/
-│   │           │   └── WarningControllerTest.java
-│   │           └── service/
-│   │               └── WarningServiceTest.java
-│   
-├── pom.xml
